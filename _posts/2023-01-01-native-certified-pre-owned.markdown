@@ -315,4 +315,4 @@ Y llegados a este punto, ya tendríamos una base para poder tratar plantillas, c
 
 [^18](#sdfootnote18anc) https://www.sysadmins.lv/blog-en/introducing-to-certificate-enrollment-apis-summary.aspx
 
-[^19](#sdfootnote19anc) https://github.com/AlmondOffSec/PassTheCert
+[^19]: [PassTheCert](https://github.com/AlmondOffSec/PassTheCert)
