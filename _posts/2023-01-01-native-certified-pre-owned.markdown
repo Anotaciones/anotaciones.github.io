@@ -407,9 +407,7 @@ $attributes = [System.DirectoryServices.Protocols.DirectoryAttribute []] @(
 $add_req = New-Object System.DirectoryServices.Protocols.AddRequest($computer_dn,$attributes)
 try{
     $add_resp = [System.DirectoryServices.Protocols.AddResponse]$LdapConnection.SendRequest($add_req)
-}
-catch[System.DirectoryServices.Protocols.DirectoryOperationException]
-{
+} catch[System.DirectoryServices.Protocols.DirectoryOperationException] {
     $PSItem.ToString()
 }
 ``` 
@@ -429,39 +427,21 @@ Y llegados a este punto, ya tendríamos una base para poder tratar plantillas, c
 # Referencias
 
 [^1]: [certutil](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/certutil)
-
 [^2]: [reg](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/reg)
-
 [^3]: [MMC](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/mmc)
-
 [^4]: [certreq](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/certreq_1)
-
 [^5]: [Obtención de certificado mediante certreq](https://learn.microsoft.com/en-us/system-center/scom/obtain-certificate-windows-server-and-operations-manager?view=sc-om-2022&tabs=Standal%2CEnter)
-
 [^6]: [CSR](https://social.technet.microsoft.com/wiki/contents/articles/20580.wiki-glossary-of-technology-acronyms.aspx#C)
-
 [^7]: [SecurityMasks](https://learn.microsoft.com/en-us/dotnet/api/system.directoryservices.securitymasks)
-
 [^8]: [Clase DirectorySearcher](https://learn.microsoft.com/en-us/dotnet/api/system.directoryservices.directorysearcher)
-
 [^9]: [msPKI-Cert-Template-OID](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-crtd/4849b1d6-b6bf-405c-8e9c-28ede1874efa)
-
 [^10]: [pKIExtendedKeyUsage](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-crtd/be8af2e6-01d8-49a5-bacf-be641041ac73)
-
 [^11]: [msPKI-RA-Application-Policies](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-crtd/3fe798de-6252-4350-aace-f418603ddeda)
-
 [^12]: [msPKI-RA-Policies](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-crtd/398eec80-19b4-42c6-a8eb-357bec133d4d)
-
 [^13]: [msPKI-Certificate-Application-Policy](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-crtd/44012f2d-5ef3-440d-a61b-b30d3d978130)
-
 [^14]: [msPKI-Enrollment-Flag](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-crtd/ec71fd43-61c2-407b-83c9-b52272dec8a1)
-
 [^15]: [msPKI-Certificate-Name-Flag](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-crtd/1192823c-d839-4bc3-9b6b-fa8c53507ae1)
-
 [^16]: [PkiCertificateAuthorityFlags](https://github.com/GhostPack/Certify/blob/2b1530309c0c5eaf41b2505dfd5a68c83403d031/Certify/Domain/CertificateAuthority.cs#L23)
-
 [^17]: [Certify](https://github.com/GhostPack/Certify/blob/main/Certify/Lib/LdapOperations.cs)
-
 [^18]: [Vadims Podāns](https://www.sysadmins.lv/blog-en/introducing-to-certificate-enrollment-apis-summary.aspx)
-
 [^19]: [PassTheCert](https://github.com/AlmondOffSec/PassTheCert)
