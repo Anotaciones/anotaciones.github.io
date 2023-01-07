@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Practicando Certified Pre-Owned"
+title:  "Certificados ADCS"
 date:   2023-01-07 12:01:00 +0200
 categories: ADCS Powershell
 ---
 
 ![banner](/images/banner1.png){: width="165" }
 
-# **Certified Pre-Owned**
+# **Certificados ADCS**
 
 _Cuando Certify/py, Ghostpack, impacket, mimikatz, hacktricks, hacker.recipes, scripkiddies cheatsheets, etc … no son una opción._
 
