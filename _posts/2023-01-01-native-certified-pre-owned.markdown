@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Native Certified Pre-Owned"
+title:  "Practicando: Certified Pre-Owned"
 date:   2023-01-07 12:01:00 +0200
 categories: ADCS Powershell
 ---
